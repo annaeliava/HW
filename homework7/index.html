@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            width: 100%;
+            height: 600px;
+            grid-template-areas: 
+            "header header header header"
+            "content-1 content-1 sidebar sidebar"
+            "content-2 content-3 sidebar sidebar"
+            "content-4 content-4 sidebar sidebar"
+            "footer-1 footer-2 footer-3 footer-4";
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 80px 1fr 1fr 100px;
+        }
+
+        .header {
+            display: grid;
+            grid-area: header;
+            background-color: lightgray;
+            justify-content: center;
+        }
+
+        .sidebar {
+            display: grid;
+            grid-area: sidebar;
+            background-color: rgb(101, 175, 101);
+            justify-content: center;
+        }
+
+        .content-1,
+        .content-2,
+        .content-3,
+        .content-4 {
+            display: grid;
+            justify-content: space-around;
+        }
+
+        .content-1 {
+            grid-area: content-1;
+            background-color: beige;
+        }
+
+        .content-2 {
+            grid-area: content-2;
+            background-color: bisque;
+        }
+
+        .content-3 {
+            grid-area: content-3;
+            background-color: bisque;
+        }
+
+        .content-4 {
+            grid-area: content-4;
+            background-color: bisque;
+        }
+
+        footer{
+            background-color: lightgray;
+        }
+
+        .footer-1 {
+            grid-area: footer-1;
+        }
+
+        .footer-2 {
+            grid-area: footer-2;
+        }
+
+        .footer-3 {
+            grid-area: footer-3;
+        }
+
+        .footer-4 {
+            grid-area: footer-4;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header class="header">[Шапка страницы]</header>
+        <div class="content-1">[Основная часть]</div>
+        <div class="content-2">[Еще 1]</div>
+        <div class="content-3">[Еще 2]</div>
+        <div class="content-4">[Еще 3]</div>
+        <aside class="sidebar">[Боковая Область]</aside>
+        <footer>
+            <div class="footer-1">[Секция футер 1]</div>
+            <div class="footer-2">[Секция футер 2]</div>
+            <div class="footer-3">[Секция футер 3]</div>
+            <div class="footer-4">[Секция футер 4]</div>
+        </footer>
+    </div>
+</body>
+</html>
