@@ -7,7 +7,7 @@
         "content-1 content-1 sidebar sidebar"
         "content-2 content-3 sidebar sidebar"
         "content-4 content-4 sidebar sidebar"
-        "footer-1 footer-2 footer-3 footer-4";
+        "footer footer footer footer";
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
 }
@@ -54,7 +54,7 @@
     background-color: bisque;
 }
 
-footer {
+.footer {
     background-color: lightgray;
 }
 
@@ -72,4 +72,9 @@ footer {
 
 .footer-4 {
     grid-area: footer-4;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
