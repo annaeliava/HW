@@ -1,0 +1,216 @@
+body {
+    font-family: DMSans;
+}
+
+header {
+    grid-area: header;
+}
+
+.logo {
+    padding-left: 30px;
+    padding-top: 32px;
+    weight: 8rem;
+    height: 2.125rem;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4 {
+    color: white;
+    text-decoration: none;
+}
+
+.nav5 {
+    color: black;
+    text-decoration: none;
+}
+
+.nav1:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav2:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav3:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav4:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav5:hover {
+    color: #b57f1c;
+    cursor: pointer;
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.joinus {
+    width: 8em;
+    height: 2em;
+    border: 1px solid #FFAC12;
+    border-radius: 0px 18px 0px 0px;
+    background-color: #FFAC12;
+    font-weight: bold;
+}
+
+#whitearrow {
+    width: 1.5em;
+    height: 0.70em;
+}
+
+main {
+    grid-area: main;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: white;
+}
+
+aside {
+    justify-content: center;
+}
+
+.placetoLive {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background: white;
+    box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+    border-radius: 25px;
+    width: 45vw;
+    height: 7.5rem;
+    font-size: 1em;
+}
+
+select {
+    width: 30vw;
+    height: 5vh;
+}
+
+.looking,
+.location,
+.property,
+.price {
+    border: none;
+}
+
+@media screen and (min-width:600px) {
+    h1 {
+        padding-left: 30px;
+        font-size: 4.5em;
+        font-weight: bold;
+        letter-spacing: -2.01026px;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+        color: white;
+        background: linear-gradient(225.52deg, #271A00 0.45%, rgba(0, 0, 0, 0.982162) 45.25%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        grid-area: footer;
+    }
+
+    .logoFooter {
+        width: 128px;
+        height: 34px;
+    }
+
+    .facebook {
+        width: 10px;
+        height: 20px;
+    }
+
+    .twiiter {
+        width: 22px;
+        height: 18px;
+    }
+
+    .instagram {
+        width: 22px;
+        height: 22px;
+    }
+
+    .container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 10% 10% 40% 25% 15%;
+        grid-template-areas:
+            "header header"
+            "header header"
+            "main sidebar"
+            "main sidebar"
+            "footer footer";
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:599px) {
+    .footer {
+        display: none;
+    }
+
+    main {
+        display: none;
+    }
+
+    .placetoLive {
+        width: 100vw;
+    }
+
+    .container {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 20% 40%;
+        grid-template-areas:
+            "header"
+            "header"
+            "sidebar"
+            "sidebar";
+    }
+}
+
+@media screen and (max-width:399px) {
+    .footer {
+        display: none;
+    }
+
+    .main {
+        display: none;
+    }
+
+    .header {
+        height: 20vh;
+    }
+
+    .sidebar {
+        height: 80vh;
+    }
+
+    .placetoLive {
+        width: 100vw;
+    }
+}
