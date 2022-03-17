@@ -1,0 +1,54 @@
+.navbar {
+    background-color: rgba(21, 19, 19, 0.933);
+}
+
+#navbarSupportedContent {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px;
+}
+
+.navbar-brand {
+    padding-left: 90px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: gray;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+.alert {
+    margin-left: 200px;
+    margin-top: 6%;
+    width: 60vw;
+    height: 35vh;
+}
+
+.welcome {
+    font-size: 60px;
+}
+
+.smalltext {
+    font-size: 15px;
+}
+
+.btn-action {
+    margin-top: 10px;
+}
+
+#rowFooter {
+    margin-top: 37px;
+    height: 10vh;
+    background-color: rgba(21, 19, 19, 0.933);
+    color: white;
+}
