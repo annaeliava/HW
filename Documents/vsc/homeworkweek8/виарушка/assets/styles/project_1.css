@@ -1,0 +1,152 @@
+body {
+    background: #E5E5E5;
+}
+
+.header__logo {
+    width: 201px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 76px;
+    margin-right: 776px;
+}
+
+.header__btn {
+    margin-top: 49px;
+    margin-right: 74px;
+    padding-top: 5px;
+    padding-left: 2px;
+    width: 115px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #5222D0;
+}
+
+.header__btn-text {
+    font-size: 13px;
+    font-family: Signika;
+    font-weight: bolder;
+    line-height: 13px;
+    color: white;
+}
+
+.header__btn-shopping-cart {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    color: white;
+}
+
+.main__title {
+    margin-left: 125px;
+    margin-top: 178px;
+    font-family: Signika;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.card-1,
+.card-4 {
+    border: 1px solid #BB2247;
+    box-sizing: border-box;
+}
+
+.card-1 {
+    margin-top: 14px;
+    margin-left: 92px;
+    margin-right: 31px;
+    padding-top: 26px;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+
+.card-2 {
+    margin-right: 75px;
+    margin-top: 14px;
+    padding-top: 26px;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+
+.card-3 {
+    margin-right: 72px;
+    padding-top: 26px;
+    padding-left: 35px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+
+.card-4 {
+    margin-left: 80px;
+    margin-bottom: 86px;
+    margin-right: 47px;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 26px;
+}
+
+.card-5 {
+    margin-top: 50px;
+    margin-right: 75px;
+}
+
+.card-title {
+    font-family: Signika;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.card-text {
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.email {
+    margin-right: 72px;
+    margin-bottom: 224px;
+}
+
+.news {
+    font-family: Signika;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.form-control {
+    font-family: Robot Slab;
+}
+
+.card__email {
+    background: #EC615B;
+}
+
+.btn__subscribe {
+    margin-top: 23px;
+    margin-left: 18px;
+    margin-right: 284px;
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.btn__subscribe-text {
+    font-family: Signika;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+}
+
+.footer__nav {
+    margin-left: 75px;
+}
+
+.footer__nav-link {
+    margin-top: 146px;
+    margin-bottom: 80px;
+    font-weight: light;
+    font-size: 20px;
+    color: black;
+}

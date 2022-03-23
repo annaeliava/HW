@@ -1,0 +1,89 @@
+body {
+    background: #E5E5E5;
+}
+
+.header__logo {
+    width: 201px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 76px;
+    margin-right: 776px;
+}
+
+.header__btn {
+    margin-top: 49px;
+    margin-right: 74px;
+    padding-top: 5px;
+    padding-left: 2px;
+    width: 115px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #5222D0;
+}
+
+.header__btn-text {
+    font-size: 13px;
+    font-family: Signika;
+    font-weight: bolder;
+    line-height: 13px;
+    color: white;
+}
+
+.header__btn-shopping-cart {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    color: white;
+}
+
+.main__title {
+    margin-left: 126px;
+    margin-top: 88.97px;
+    font-family: Signika;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.main__subtitle {
+    margin-right: 44px;
+    margin-left: 126px;
+    margin-top: 10px;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main__pic {
+    float: right;
+    margin-top: 1.11px;
+    width: 50vw;
+}
+
+.main__btn {
+    margin-top: 30px;
+    margin-left: 116px;
+    width: 270px;
+    height: 84px;
+    border-radius: 100px;
+    background-color: #5222D0;
+}
+
+.main__btn-text {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 35px;
+    border-radius: 100px;
+    color: white;
+}
+
+.footer__nav {
+    margin-left: 75px;
+}
+
+.footer__nav-link {
+    margin-top: 146px;
+    margin-bottom: 80px;
+    font-weight: light;
+    font-size: 20px;
+    color: #5222D0;
+}

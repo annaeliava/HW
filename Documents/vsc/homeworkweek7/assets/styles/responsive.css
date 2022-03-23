@@ -1,0 +1,90 @@
+body {
+    font-weight: bold;
+    color: black;
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+        "header header header header"
+        "content-1 content-1 sidebar sidebar"
+        "content-2 content-3 sidebar sidebar"
+        "content-4 content-4 sidebar sidebar"
+        "footer footer footer footer";
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 10% 2fr 1fr 1fr 10%;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+    background-color: lightgray;
+}
+
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    background-color: rgb(101, 175, 101);
+    justify-content: center;
+}
+
+.content-1 {
+    grid-area: content-1;
+    background-color: beige;
+}
+
+.content-2 {
+    grid-area: content-2;
+    background-color: bisque;
+    border: 1px solid bisque;
+}
+
+.content-3 {
+    grid-area: content-3;
+    background-color: bisque;
+    border: 1px solid bisque;
+}
+
+.content-4 {
+    grid-area: content-4;
+    background-color: bisque;
+    border: 1px solid bisque;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightgray;
+}
+
+.footer-1 {
+    border: 1px solid white;
+    background: white;
+    grid-area: footer-1;
+}
+
+.footer-2 {
+    border: 1px solid white;
+    background: white;
+    grid-area: footer-2;
+}
+
+.footer-3 {
+    border: 1px solid white;
+    background: white;
+    grid-area: footer-3;
+}
+
+.footer-4 {
+    border: 1px solid white;
+    background: white;
+    grid-area: footer-4;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.55em;
+}

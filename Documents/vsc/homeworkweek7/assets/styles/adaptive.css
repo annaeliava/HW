@@ -1,0 +1,131 @@
+body {
+    font-weight: bold;
+    color: black;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    background-color: rgb(101, 175, 101);
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    width: 60vw;
+    height: 80vh;
+}
+
+.content-1 {
+    grid-area: content-1;
+    background-color: beige;
+}
+
+.content-2 {
+    grid-area: content-2;
+    background-color: bisque;
+}
+
+.content-3 {
+    grid-area: content-3;
+    background-color: bisque;
+}
+
+.content-4 {
+    grid-area: content-4;
+    background-color: bisque;
+}
+
+@media screen and (min-width:600px) {
+    .footer {
+        background-color: lightgray;
+        grid-area: footer;
+    }
+
+    .footerContainer {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1em;
+    }
+
+    .footer-1 {
+        border: 1px solid white;
+        background: white;
+    }
+
+    .footer-2 {
+        border: 1px solid white;
+        background: white;
+    }
+
+    .footer-3 {
+        border: 1px solid white;
+        background: white;
+    }
+
+    .footer-4 {
+        border: 1px solid white;
+        background: white;
+    }
+
+    .container {
+        display: grid;
+        height: 90vh;
+        width: 100vw;
+        grid-template-areas:
+            "header header header header"
+            "content-1 content-1 sidebar sidebar"
+            "content-2 content-3 sidebar sidebar"
+            "content-4 content-4 sidebar sidebar"
+            "footer footer footer footer";
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 10% 1fr 1fr 1fr 10%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:599px) {
+    .footer {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        height: 87vh;
+        width: 100vw;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header"
+            "content-1 sidebar"
+            "content-2 sidebar"
+            "content-3 sidebar"
+            "content-4 sidebar";
+    }
+}
+
+@media screen and (max-width:399px) {
+    .footer {
+        display: none;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+    .header {
+        height: 30vh;
+    }
+
+    .sidebar {
+        height: 60vh;
+    }
+}
